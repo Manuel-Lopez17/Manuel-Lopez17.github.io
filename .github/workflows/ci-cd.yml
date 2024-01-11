@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '20.8.0'
 
       - name: Install Dependencies
         run: npm install
@@ -33,7 +33,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '20.8.0'
 
       - name: Install Dependencies
         run: npm install
@@ -46,4 +46,4 @@ jobs:
     needs: build
     steps:
       - name: Deploy to Hosting Platform
-        run: npx vercel --token ${{ secrets.VERCEL_TOKEN }} --confirm
+        run: npx vercel --token ${{ secrets.VERCEL_TOKEN }} --yes
