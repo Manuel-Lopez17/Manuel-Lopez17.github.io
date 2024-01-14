@@ -2,11 +2,12 @@
 import Layout from '../layouts/Layout.astro'
 import '@/styles/globals.css'
 import { Button } from '@/components/ui/button'
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel'
 
-title: 'Home'
+const title = 'Welcome to Manu´s Page.'
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={title}>
   <div slot="main">
     <Button>TEST- shadcn-ui</Button>
   </div>
