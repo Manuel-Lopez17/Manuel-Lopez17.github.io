@@ -66,6 +66,23 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
+
+  * {
+    box-sizing: border-box;
+    min-width: 0;
+  }
+
+  body{
+    min-height: 100dvh
+  }
+
+  h1,h2,h3,h4{
+    text-wrap: balance
+  }
+
+  p{
+    text-wrap: pretty
+  }
 }
  
 @layer base {
