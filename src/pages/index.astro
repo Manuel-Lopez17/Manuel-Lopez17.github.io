@@ -1,12 +1,11 @@
 ---
 import { ToastWithTitle } from '@/components/UseToastExample'
-import Layout from '../layouts/Layout.astro'
-import '@/styles/globals.css'
+import Layout from '@/layouts/Layout.astro'
 
 const title = 'Welcome to Manu´s Page.'
 ---
 
-<Layout title={title} description="Pagina de inicio" keywords="Pagina de inicio">
+<Layout title={title} description="Main page" keywords="Main page">
   <div slot="main">
     <ToastWithTitle client:load />
   </div>

@@ -8,6 +8,8 @@ import {
   NavigationMenuTrigger,
   NavigationMenuViewport
 } from '@/components/ui/navigation-menu'
+import { ModeToggle } from './ModeToggle'
+
 
 export function Nav() {
   return (
@@ -19,6 +21,10 @@ export function Nav() {
             <NavigationMenuContent>
               <NavigationMenuLink>Link</NavigationMenuLink>
             </NavigationMenuContent>
+          </NavigationMenuItem>
+          <NavigationMenuItem>
+                  <ModeToggle  />
+
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
