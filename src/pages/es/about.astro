@@ -1,0 +1,12 @@
+---
+import { ToastWithTitle } from '@/components/UseToastExample'
+import Layout from '@/layouts/Layout.astro'
+
+const title = 'Bienvenidos a la pagina principal.'
+---
+
+<Layout title={title} description="Main page" keywords="Main page">
+  <div slot="main">
+    <ToastWithTitle client:load />
+  </div>
+</Layout>

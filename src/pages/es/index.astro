@@ -1,0 +1,18 @@
+---
+import { ToastWithTitle } from '@/components/UseToastExample'
+import Layout from '@/layouts/Layout.astro'
+
+import { getRelativeLocaleUrl } from 'astro:i18n'
+
+// defaultLocale is "es"
+const aboutURL = getRelativeLocaleUrl('es', 'about')
+
+const title = 'Bienvenidos a la pagina principal.'
+---
+
+<Layout title={title} description="Pagina principal" keywords="Pagina principal">
+  <div slot="main">
+    <ToastWithTitle client:load />
+    <a href={aboutURL}>Acerca</a>
+  </div>
+</Layout>
