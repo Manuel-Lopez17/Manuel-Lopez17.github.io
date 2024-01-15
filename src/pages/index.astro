@@ -1,13 +1,13 @@
 ---
+import { ToastWithTitle } from '@/components/UseToastExample'
 import Layout from '../layouts/Layout.astro'
 import '@/styles/globals.css'
-import { Button } from '@/components/ui/button'
 
 const title = 'Welcome to Manu´s Page.'
 ---
 
 <Layout title={title}>
   <div slot="main">
-    <Button>TEST- shadcn-ui</Button>
+    <ToastWithTitle client:load />
   </div>
 </Layout>

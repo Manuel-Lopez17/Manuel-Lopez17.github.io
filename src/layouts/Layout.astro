@@ -1,6 +1,7 @@
 ---
-import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { ModeToggle } from '@/components/ModeToggle'
+import { Toaster } from '@/components/ui/toaster'
+import { Nav } from '@/components/Nav'
 
 interface Props {
   title: string
@@ -42,18 +43,13 @@ const { title } = Astro.props
     <div
       class="h-screen w-full items-center px-5 py-5 [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)] dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
     >
-      <slot name="nav" />
-      <slot name="main" />
-      <div>
-        <slot name="footer" />
-        <ModeToggle client:load />
-      </div>
-    </div>
-    <div class="absolute right-4 top-4">
-      <Alert>
-        <AlertTitle>Heads up!</AlertTitle>
-        <AlertDescription>You can add components and dependencies to your app using the cli.</AlertDescription>
-      </Alert>
+      <Nav client:load />
+      <main>
+        <slot name="main" />
+      </main>
+      <Toaster client:load />
+      <slot name="footer" />
+      <ModeToggle client:load />
     </div>
   </body>
 </html>
