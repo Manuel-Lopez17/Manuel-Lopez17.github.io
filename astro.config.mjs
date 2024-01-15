@@ -1,7 +1,6 @@
-import { defineConfig } from 'astro/config';
-import react from "@astrojs/react";
-import tailwind from "@astrojs/tailwind";
-
+import { defineConfig } from 'astro/config'
+import react from '@astrojs/react'
+import tailwind from '@astrojs/tailwind'
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,7 +10,10 @@ export default defineConfig({
     site: 'https://manuel-lopez17.github.io/',
     base: 'manuel-lopez17.github.io'
   },
-  integrations: [react(), tailwind({
-    applyBaseStyles: false,
-  })]
-});
+  integrations: [
+    react(),
+    tailwind({
+      applyBaseStyles: false
+    })
+  ]
+})

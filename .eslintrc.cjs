@@ -2,7 +2,7 @@
 module.exports = {
   parserOptions: {
     ecmaVersion: 2021,
-    sourceType: 'module',
+    sourceType: 'module'
   },
   extends: ['eslint:recommended', 'prettier'],
   plugins: ['prettier'],
@@ -10,8 +10,8 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        endOfLine: 'auto',
-      },
-    ],
-  },
+        endOfLine: 'auto'
+      }
+    ]
+  }
 }

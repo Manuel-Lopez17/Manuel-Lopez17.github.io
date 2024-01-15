@@ -1,7 +1,5 @@
-"use client"
-
-import { Button } from "@/components/ui/button"
-import { useToast } from "@/components/ui/use-toast"
+import { Button } from '@/components/ui/button'
+import { useToast } from '@/components/ui/use-toast'
 
 export function ToastWithTitle() {
   const { toast } = useToast()
@@ -11,8 +9,8 @@ export function ToastWithTitle() {
       variant="outline"
       onClick={() => {
         toast({
-          title: "Uh oh! Something went wrong.",
-          description: "There was a problem with your request.",
+          title: 'Uh oh! Something went wrong.',
+          description: 'There was a problem with your request.'
         })
       }}
     >
