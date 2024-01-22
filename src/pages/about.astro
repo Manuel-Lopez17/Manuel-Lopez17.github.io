@@ -1,4 +1,5 @@
 ---
+import ContactForm from '@/components/ContactForm'
 import { ToastWithTitle } from '@/components/UseToastExample'
 import Layout from '@/layouts/Layout.astro'
 
@@ -7,6 +8,6 @@ const title = 'About'
 
 <Layout title={title} description="About page" keywords="About page">
   <div slot="main">
-    <ToastWithTitle client:load />
+    <ContactForm client:visible />
   </div>
 </Layout>
